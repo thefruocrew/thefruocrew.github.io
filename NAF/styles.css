@@ -1,0 +1,182 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+/* Header */
+header {
+    background-color: #2b2b2b5e;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f3e412;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://media1.tenor.com/m/XN9hpMXIb68AAAAd/nic-roblox.gif') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-text {
+    max-width: 700px;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+    background-color: #f3ef12;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #e6c222;
+}
+
+/* Ranks Section */
+.ranks {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #1b1b1b;
+}
+
+.ranks h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #f3dd12;
+}
+
+.ranks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.rank-card {
+    background-color: #2e2e2e;
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.rank-card:hover {
+    transform: scale(1.05);
+}
+
+.rank-card h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.rank-card p {
+    font-size: 1.1rem;
+}
+
+/* Events Section */
+.events {
+    padding: 3rem 2rem;
+    background-color: #202020;
+}
+
+.events h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #f3dd12;
+    text-align: center;
+}
+
+.event-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.event {
+    background-color: #2e2e2e;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.event h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Join Section */
+.join {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #1b1b1b;
+}
+
+.join h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #f3dd12;
+}
+
+/* Footer */
+footer {
+    padding: 1rem 0;
+    background-color: #2b2b2b;
+    text-align: center;
+}
