@@ -101,6 +101,17 @@ nav ul li a:hover {
     background-color: #e6c222;
 }
 
+.blur {
+    background-color: rgba(0, 0, 0, 0.089); /* Transparent background */
+    backdrop-filter: blur(20px); /* Adds a blur effect */
+    -webkit-backdrop-filter: blur(20px); /* Safari support */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: white; /* Ensures text is visible (optional, depending on image) */
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.781); /* Adds a drop shadow */
+}
+
 /* Ranks Section */
 #ranks {
     background-color: rgba(0, 0, 0, 0.4); /* Transparent background */
