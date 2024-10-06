@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%; /* Ensure the background covers the full height */
+    font-family: 'Arial', sans-serif;
+    background: url('https://media1.tenor.com/m/XN9hpMXIb68AAAAd/nic-roblox.gif') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire page */
+    color: #fff;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #1e1e1e;
@@ -54,7 +62,6 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background: url('https://media1.tenor.com/m/XN9hpMXIb68AAAAd/nic-roblox.gif') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -92,11 +99,21 @@ nav ul li a:hover {
     background-color: #e6c222;
 }
 
+.blur {
+    background-color: rgba(0, 0, 0, 0.4); /* Transparent background */
+    backdrop-filter: blur(20px); /* Adds a blur effect */
+    -webkit-backdrop-filter: blur(20px); /* Safari support */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: white; /* Ensures text is visible (optional, depending on image) */
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.781); /* Adds a drop shadow */
+}
+
 /* Ranks Section */
 .ranks {
     padding: 3rem 2rem;
     text-align: center;
-    background-color: #1b1b1b;
 }
 
 .ranks h2 {
@@ -134,7 +151,6 @@ nav ul li a:hover {
 /* Events Section */
 .events {
     padding: 3rem 2rem;
-    background-color: #202020;
 }
 
 .events h2 {

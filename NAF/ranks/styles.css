@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%; /* Ensure the background covers the full height */
+    font-family: 'Arial', sans-serif;
+    background: url('https://media1.tenor.com/m/XN9hpMXIb68AAAAd/nic-roblox.gif') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire page */
+    color: #fff;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #1e1e1e;
@@ -54,7 +62,6 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background: url('https://media1.tenor.com/m/XN9hpMXIb68AAAAd/nic-roblox.gif') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -93,6 +100,17 @@ nav ul li a:hover {
 }
 
 /* Ranks Section */
+#ranks {
+    background-color: rgba(0, 0, 0, 0.4); /* Transparent background */
+    backdrop-filter: blur(10px); /* Adds a blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 50px 0; /* Adds padding to give the section some vertical spacing */
+    color: white; /* Ensures text is visible (optional, depending on image) */
+}
+
 .ranks {
     padding: 3rem 2rem;
     text-align: center;
@@ -107,20 +125,24 @@ nav ul li a:hover {
 
 .ranks-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: 1fr; /* Ensures one card per row */
+    gap: 20px; /* Adds space between the cards */
+    max-width: 800px; /* Limits the width of the grid */
+    margin: 0 auto; /* Centers the grid */
 }
 
 .rank-card {
-    background-color: #2e2e2e;
-    padding: 1.5rem;
-    border-radius: 10px;
-    transition: transform 0.3s;
+    background-color: #313131;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .rank-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Adds a hover effect */
 }
+
 
 .rank-card h3 {
     font-size: 1.7rem;
@@ -128,6 +150,50 @@ nav ul li a:hover {
 }
 
 .rank-card p {
+    font-size: 1.1rem;
+}
+
+/* High Command */
+.highcommand {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #1b1b1b;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a drop shadow to the section */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    margin: 20px auto; /* Adds space around the section */
+    max-width: 1200px; /* Limits the width */
+}
+
+
+.highcommand h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #f3dd12;
+}
+
+.command-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.command-card {
+    background-color: #2e2e2e;
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.command-card:hover {
+    transform: scale(1.05);
+}
+
+.command-card h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.command-card p {
     font-size: 1.1rem;
 }
 
