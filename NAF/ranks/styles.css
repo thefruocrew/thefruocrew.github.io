@@ -117,10 +117,16 @@ nav ul li a:hover {
     background-color: #1b1b1b;
 }
 
-.ranks h2 {
-    font-size: 2.5rem;
+.ranks h1 {
+    font-size: 3rem;
     margin-bottom: 2rem;
     color: #f3dd12;
+}
+
+.ranks h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #f3d112;
 }
 
 .ranks-grid {
